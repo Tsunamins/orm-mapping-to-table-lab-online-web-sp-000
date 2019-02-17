@@ -42,7 +42,7 @@ class Student
       
       hash.each do |attribute, value| 
         
-        find_var = self.send("#{attribute}", "#{value}")
+        find_var = self.send("#{attribute}", value)
           # self.new(find_var)
         
       end 
