@@ -4,10 +4,11 @@ class Student
         
   
         
-  def initialize(name, grade)
-    @name = name
-    @grade = grade
-    @id = id 
+  def initialize(attributes)
+    attributes.each {|key, value| self.send(("#{key}="), value)}
+    # @name = name
+    # @grade = grade
+    # @id = id 
     
     
   end 
@@ -40,14 +41,14 @@ class Student
   def self.create(hash) 
     
       
-      hash.each do |attribute, value| 
+      # hash.each do |attribute, value| 
         
-        find_var = self.send("#{attribute}", value)
+      #   find_var = self.send("#{attribute}", value)
           
-          # self.new(find_var)
+      #     # self.new(find_var)
         
-      end 
-      self.save
+      # end 
+      # self.save
       
      
     end 
