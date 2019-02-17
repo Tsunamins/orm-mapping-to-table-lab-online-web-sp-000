@@ -4,11 +4,11 @@ class Student
         
   
         
-  def initialize(attributes)
-    attributes.each {|key, value| self.send(("#{key}="), value)}
-    # @name = name
-    # @grade = grade
-    # @id = id 
+  def initialize(name, grade)
+    
+    @name = name
+    @grade = grade
+    @id = id 
     
     
   end 
