@@ -39,7 +39,8 @@ class Student
   end 
   
   def self.create(hash) 
-    
+    hash
+    binding.pry
       
       # hash.each do |attribute, value| 
         
