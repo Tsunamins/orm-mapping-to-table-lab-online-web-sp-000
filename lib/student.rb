@@ -44,6 +44,7 @@ class Student
     @grade = hash[:grade] 
     from_hash = self.new(@name, @grade) 
     from_hash.save 
+    return from_hash
   end 
   
 end
