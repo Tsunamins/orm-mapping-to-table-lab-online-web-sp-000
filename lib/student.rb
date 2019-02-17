@@ -39,19 +39,11 @@ class Student
   end 
   
   def self.create(hash) 
-    hash
     
-      
-      # hash.each do |attribute, value| 
-        
-      #   find_var = self.send("#{attribute}", value)
-          
-      #     # self.new(find_var)
-        
-      # end 
-      # self.save
-      
-     
-    end 
+    @name = hash[:name]
+    @grade = hash[:grade] 
+    from_hash = self.new(@name, @grade) 
+    from_hash.save 
+  end 
   
 end
